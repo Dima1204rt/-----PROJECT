@@ -1,0 +1,43 @@
+body {
+    background-color: #30606aac;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2 {
+    text-align: center;
+}
+#feedback{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 16%;
+    text-align: center
+}
+#butSt{
+    
+}
+select, input, button {
+    display: block;
+    margin: 0 auto;
+}
+#content{
+    display: none;
+}
+
+#result{
+    animation: 1s 1 alternate anim;
+}
+
+#headd{
+    background-color: rgba(225, 220, 245, 0.274);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+@keyframes anim {
+    from{ 
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
