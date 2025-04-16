@@ -50,21 +50,31 @@ function onStartBtnPressed(){ //функция, описываающая что 
     if (direction.value === 'ИЗ десятичной'){
         if (sys.value === 'Двоичная'){
             dircon.innerText=`Направление перевода: в Двоичную`
-            sysgencon.innerText=`Система счисления сгенерированного числа: Десятичная`
+            sysgencon.innerText=`(десятичная система счисления)`
         }
         if (sys.value === 'Восьмеричная'){
             dircon.innerText=`Направление перевода: в Восьмеричную`
-            sysgencon.innerText=`Система счисления сгенерированного числа: Десятичная`
+            sysgencon.innerText=`(десятичная система счисления)`
         }
         if (sys.value === 'Шестнадцатеричная'){
             dircon.innerText=`Направление перевода: в Шестнадцатеричную`
-            sysgencon.innerText=`Система счисления сгенерированного числа: Десятичная`
+            sysgencon.innerText=`(десятичная система счисления)`
         }
 
     }
-    else{
-        dircon.innerText=`Направление перевода: ${direction.value}`
-        sysgencon.innerText=`Система счисления сгенерированного числа: ${sys.value}`
+    if (direction.value === 'В десятичную'){
+        if (sys.value === 'Двоичная'){
+            dircon.innerText=`Направление перевода: ${direction.value}`
+            sysgencon.innerText=`(двоичная система счисления)`
+        }
+        if (sys.value === 'Восьмеричная'){
+            dircon.innerText=`Направление перевода: ${direction.value}`
+            sysgencon.innerText=`(восьмеричная система счисления)`
+        }
+        if (sys.value === 'Шестнадцатеричная'){
+            dircon.innerText=`Направление перевода: ${direction.value}`
+            sysgencon.innerText=`(шестнадцатеричная система счисления)`
+        }
     }
     
     content.style.display='block' //проявление контейнера content
